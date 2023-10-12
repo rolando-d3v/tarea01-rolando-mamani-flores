@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #35374c; /* Cambia el color de fondo del cuerpo a negro */
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #000; /* Agrega un borde al contenedor */
+            border-radius: 10px; /* Agrega bordes redondeados */
+            overflow: hidden;
+            background-color: #ffffff; /* Cambia el color de fondo del cuerpo a negro */
+        }
+        
+        .left-column {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .right-column {
+            flex: 1;
+            position: relative;
+            text-align: center;
+            border-radius: 10px; /* Agrega bordes redondeados */ 
+    margin: 13px; /* Agrega un margen de 1px alrededor de container2 */
+        }
+
+        .title {
+            color:#252842; 
+            margin-bottom: 10px;
+            font-size: 48px; /* Aumenta el tamaño del título a 48px o el tamaño que desees */
+    font-weight: bold; /* Aplica negrita al texto */
+        }
+
+        .small-text {
+            font-size: 12px;
+            color: #666;
+        }
+
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+
+        .checklist li {
+            margin-bottom: 10px;
+            list-style-type: none;
+        } 
+        .checklist li::before {
+            content: '✓ ';
+            color: white;
+            background-color: #fd5c55;
+            border-radius: 50%;
+            padding: 4px;
+            margin-right: 5px;
+        }
+
+        .email-input {
+            margin-top: 20px;
+            display: block;
+        }
+
+        .email-title {
+            font-size: 14px;
+        }
+
+        .register-button {
+            background-color: #232742;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .images { 
+            width: 100%;
+            height: 100%;
+            border-radius: 20px; /* Agrega bordes redondeados */  
+        }
+
+        .image2 {
+            top: 40%;
+            left: 40%;
+            width: 60%;
+            position: absolute;
+        }
+
+        .image3 {
+            top: 15%;
+            right: 10%;
+            width: 30%;
+            position: absolute;
+        }
+
+        .image4 {
+            top: 65%;
+            right: 10%;
+            width: 30%;
+            position: absolute;
+        }
+        .email-title {
+            font-size: 14px;
+            display: block;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="left-column">
+                <div class="title">Stay updated!</div>
+                <p class="small-text">Join 60,000+ product managers receiving
+                    monthly updates on:</p>
+                <ul class="checklist">
+                    <li>Product discovery and building what matters</li>
+                    <li>Measuring to ensure updates are a success</li>
+                    <li>And Much more!</li>
+                </ul>
+                <label for="email" class="email-title">Email Address:</label>
+                <input type="email" class="email-input"
+                    placeholder="Email@company.com">
+                <button class="register-button">Registrar</button>
+            </div>
+            <div class="right-column">
+                <img src="img1.jpeg" alt="Imagen 1" class="images">
+                <img src="img2.png" alt="Imagen 2" class="image2">
+                <img src="img3.png" alt="Imagen 3" class="image3">
+                <img src="img4.png" alt="Imagen 4" class="image4">
+
+            </div>
+
+        </div>
+    </body>
+
+</html>

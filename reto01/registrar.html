@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+       body {
+        margin: 0; /* Elimina el margen predeterminado del body */
+        background-color: #13171f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; /* Usa min-height en lugar de height para asegurar que se ajuste al contenido */
+      }
+      .form-container {
+        background-color: #13171f;
+        color: #808080; /* Color medio plomo */
+        padding: 20px;
+        text-align: left;
+        max-width: 800px; /* Limita el ancho del contenedor para evitar que se extienda demasiado */
+      }
+      .name-inputs {
+        display: flex;
+        justify-content: space-between;
+      }
+      .name-inputs input {
+        flex: 1;
+        width: 100%;
+        margin-right: 2%;
+      }
+      .row {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      h1 {
+        margin: 0; /* Elimina el margen superior del título */
+        color:white
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Crea una cuenta</h1>
+      <p>Ingresa la siguiente información para registrarte.</p>
+
+      <div class="row name-inputs" >
+        <div class="col-12">
+          <label for="nombres">Nombres</label>
+          <input type="text" id="nombres" placeholder="Nombres" class="bg-black text-white p-2">
+        </div>
+        <div class="col-12">
+          <label for="apellidos">Apellidos</label>
+          <input type="text" id="apellidos" placeholder="Apellidos" class="bg-black text-white p-2">
+        </div>
+      </div>
+      <div class="row">
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" placeholder="Edad" class="bg-black text-white p-2">
+      </div>
+
+      <div class="row">
+        <label for="fechaNacimiento">Fecha de Nacimiento</label>
+        <input type="date" id="fechaNacimiento" class="bg-black text-white p-2">
+      </div>
+
+      <div class="row">
+        <label for="genero">Selecciona tu género</label>
+        <select id="genero" class="bg-black text-white p-2">
+          <option value="">Elegir</option>
+          <option value="masculino">Masculino</option>
+          <option value="femenino">Femenino</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email" class="bg-black text-white p-2">
+      </div>
+
+      <div class="row">
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion" placeholder="Dirección" class="bg-black text-white p-2">
+        <input type="text" id="direccion" placeholder="Dirección 2" class="bg-black text-white p-2">
+      </div>
+
+      <div class="row">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" placeholder="Teléfono" class="bg-black text-white p-2">
+      </div>
+
+      <div class="row">
+        <label for="codigoPostal">Código Postal</label>
+        <input type="text" id="codigoPostal" placeholder="Código Postal" class="bg-black text-white p-2">
+      </div>
+
+      <div class="row">
+        <label for="ciudad">Ciudad</label>
+        <input type="text" id="ciudad" placeholder="Ciudad" class="bg-black text-white p-2">
+      </div>
+
+      <div class="row">
+        <label for="firma">Subir Firma</label>
+        <input type="file" id="firma" class="bg-black text-white p-2">
+      </div>
+
+      <div class="row">
+        <input type="checkbox" id="terminos" class="bg-black text-white p-2">
+        <label for="terminos">Acepto los términos y condiciones</label>
+      </div>
+
+      <button class="btn bg-blue text-white">Registrarse</button>
+
+      <p>¿Ya tienes una cuenta? <a href="index.html" class="text-blue underline">Accede desde aquí</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+      body {
+        margin: 0; /* Elimina el margen predeterminado del body */
+        background-color: #13171f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; /* Usa min-height en lugar de height para asegurar que se ajuste al contenido */
+      }
+      .form-container {
+        background-color: #13171f;
+        color: #808080; /* Color medio plomo */
+        padding: 20px;
+        text-align: center;
+        max-width: 800px; /* Limita el ancho del contenedor para evitar que se extienda demasiado */
+      }
+      .name-inputs {
+        display: flex;
+        justify-content: space-between;
+      }
+      .name-inputs input {
+        flex: 1;
+        width: 48%;
+        margin-right: 2%;
+      }
+      .row {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      h1 {
+        margin: 0; /* Elimina el margen superior del título */
+        color:white
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Crea una cuenta</h1>
+      <p>Ingresa la siguiente información para registrarte.</p>
+
+      <div class="row name-inputs">
+        <input type="text" placeholder="Nombres" class="bg-black text-white p-2">
+        <input type="text" placeholder="Apellidos" class="bg-black text-white p-2">
+      </div>
+      <div class="row">
+        <input type="email" placeholder="Email" class="bg-black text-white p-2">
+      </div>
+      <div class="row">
+        <input type="tel" placeholder="Teléfono" class="bg-black text-white p-2">
+      </div>
+      <div class="row">
+        <input type="password" placeholder="Contraseña" class="bg-black text-white p-2">
+      </div>
+      <div class="row">
+        <input type="password" placeholder="Confirmar Contraseña" class="bg-black text-white p-2">
+      </div>
+
+      <button class="btn bg-blue text-white">Registrarse</button>
+
+      <p>¿Ya tienes una cuenta? <a href="registrar.html" class="text-blue underline">Accede desde aquí</a></p>
+    </div>
+  </body>
+</html>
